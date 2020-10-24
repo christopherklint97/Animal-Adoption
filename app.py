@@ -62,3 +62,7 @@ def show_edit_form(pet_id):
         return redirect(f'/{pet_id}')
     else:
         return render_template("edit_pet_form.html", form=form, pet=pet)
+
+
+if __name__ == "__main__":
+    app.run()
